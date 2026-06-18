@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Learn More - Coffee Shop</title>
+    <style>
+        .about, .offerings, .contact {
+            padding: 5rem 7%;
+            background: var(--bg);
+        }
+        
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+        
+        .row .content {
+            flex: 1;
+            padding: 2rem;
+        }
+        
+        .row .image {
+            flex: 1;
+        }
+        
+        .row .image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .box 
+        {
+            padding: 2rem;
+            text-align: center;
+            border: var(--border);
+            border-radius: 10px;
+            background: var(--black);
+        }
+        
+        .box img {
+            height: 15rem;
+            border-radius: 10px;
+        }
+        
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .contact .inputBox {
+            width: 100%;
+            margin: 1rem 0;
+        }
+        
+        .contact .inputBox input,
+        .contact .inputBox textarea {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.6rem;
+            border: var(--border);
+            border-radius: 5px;
+            background: var(--bg);
+            color: #fff;
+        }
+        
+        .contact .inputBox textarea {
+            height: 10rem;
+        }
+        
+        .contact .btn {
+            margin-top: 1rem;
+            padding: 1rem 3rem;
+            font-size: 1.7rem;
+            color: #fff;
+            background: var(--main-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .contact .btn:hover {
+            background: #b5945e;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Coffee Shop Logo"> <!-- Replace with your logo -->
+        </div>
+        <nav class="navbar">
+            <a href="#story">Our Story</a>
+            <a href="#offerings">Our Offerings</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="about" id="story">
+        <h2 class="heading">Our <span>Story</span></h2>
+        <div class="row">
+            <div class="content">
+                <h3>Welcome to Our Coffee Shop</h3>
+                <p>At our coffee shop, we believe in the art of coffee. Our journey began with a passion for quality beans and a desire to create a warm, inviting space for coffee lovers. We source our beans from sustainable farms and roast them to perfection, ensuring every cup is a delightful experience.</p>
+            </div>
+            <div class="image">
+                <img src="coffee-shop.jpg" alt="Coffee Shop Interior"> <!-- Replace with your image -->
+            </div>
+        </div>
+    </section>
+
+    <section class="offerings" id="offerings">
+        <h2 class="heading">Our <span>Offerings</span></h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="espresso.jpg" alt="Espresso"> <!-- Replace with your image -->
+                <h3>Espresso</h3>
+                <p>A rich and bold shot of espresso, perfect for a quick pick-me-up.</p>
+            </div>
+            <div class="box">
+                <img src="latte.jpg" alt="Latte"> <!-- Replace with your image -->
+                <h3>Latte</h3>
+                <p>Our creamy latte is made with freshly steamed milk and a shot of espresso.</p>
+            </div>
+            <div class="box">
+                <img src="cappuccino.jpg" alt="Cappuccino"> <!-- Replace with your image -->
+                <h3>Cappuccino</h3>
+                <p>A classic cappuccino with equal parts espresso, steamed milk, and foam.</p>
+            </div>
+            <div class="box">
+                <img src="pastries.jpg" alt="Pastries"> <!-- Replace with your image -->
+                <h3>Pastries</h3>
+                <p>Enjoy our selection of freshly baked pastries, perfect with your coffee.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+        <form>
+            <div class="inputBox">
+                <span>Name</span>
+                <input type="text" required>
+            </div>
+            <div class="inputBox">
+                <span>Email</span>
+                <input type="email" required>
+            </div>
+            <div class="inputBox">
+                <span>Message</span>
+                <textarea required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p class="credit">© 2023 Coffee Shop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
